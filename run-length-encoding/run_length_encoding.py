@@ -6,6 +6,6 @@ def decode(text):
                text)
 
 def encode(text):
-    return sub(r'(.)\1*', lambda m: str(len(m.group(0))) + m.group(1),
+    return sub(r'(.)\1+', lambda m: str(len(m.group(0))) + m.group(1),
                text)
 
