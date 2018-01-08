@@ -1,3 +1,5 @@
+import math
+
 def distance(stringa, stringb):
     if len(stringa) == len(stringb):
         hamcount = 0
