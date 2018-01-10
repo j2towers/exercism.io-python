@@ -2,7 +2,7 @@ def largest_product(series, size):
 
     total = 0
 
-    if (not str.isalpha(series) and len(series) >= 0):
+    if (not str.isalpha(series) and len(series) > 0):
 
         if (size >= 0 and size <= len(series)):
 
@@ -28,6 +28,10 @@ def largest_product(series, size):
         else:
 
             raise ValueError("Size error.")
+
+    elif (size == 0):
+
+        return 1
 
     else:
 
